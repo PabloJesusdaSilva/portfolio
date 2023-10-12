@@ -1,27 +1,30 @@
 import { Command } from 'lucide-react';
+import Link from 'next/link';
+
+import AboutMePage from "@/app/about/page";
 
 export default function Header () {
    return (
-      <header className="flex justify-between w-full py-4 px-8 text-zinc-400 backdrop-blur-lg">
-         <div className='font-bold text-2xl'>P</div>
+      <header className="flex justify-between w-full py-5 px-8 text-zinc-400 backdrop-blur-lg">
+         <div className='font-bold text-2xl transition-all duration-300 hover:text-zinc-300'>P</div>
 
          <nav className='hidden md:block'>
             <ul className='flex space-x-6'>
                <li>
-                  <span className='text-xl font-semibold'>
+                  <Link href="/about"className='text-xl font-semibold transition-all duration-300 hover:text-zinc-300'>
                      About
-                  </span> 
+                  </Link> 
                </li>
                <li>
-                  <span className='text-xl font-semibold'>
+                  <Link href="/projects" className='text-xl font-semibold transition-all duration-300 hover:text-zinc-300'>
                      Projects
-                  </span> 
+                  </Link> 
                </li>
             </ul>
          </nav>
 
          <div>
-            <Command className=''/>
+            <Command className='transition-all duration-500 hover:rotate-180'/>
          </div>
       </header>
    )

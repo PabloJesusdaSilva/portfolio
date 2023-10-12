@@ -4,7 +4,7 @@ export default function BriefDescription () {
    return (
       <main className="flex justify-center -ml-20 w-full h-full text-zinc-300">
          <div className="mt-16 ml-14 md:mt-44 ml-32">
-            <h1 className="text-8xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-tr from-violet-500 to-orange-300">
+            <h1 className="text-8xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-tr from-violet-600 to-orange-400 hover:bg-gradient-to-tl">
                Pablo Silva
             </h1>
 
@@ -13,7 +13,7 @@ export default function BriefDescription () {
                <p className="text-zinc-500 text-lg font-semibold">NextJs | ReactJs | Typescript | SASS | Tailwind</p>
             </div>
 
-            <button className="flex h-6 items-center mt-16 -ml-2 px-3 py-5 rounded-md font-medium text-lg tracking-wider transition-all hover:bg-zinc-800">
+            <button className="flex h-6 items-center mt-16 -ml-2 px-3 py-5 rounded-xl font-medium text-lg tracking-wider transition-all duration-300 hover:bg-zinc-800">
                Clique para iniciar
 
                <ChevronRightIcon className='ml-2' />
