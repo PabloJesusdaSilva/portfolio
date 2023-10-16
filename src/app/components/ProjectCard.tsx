@@ -28,13 +28,13 @@ const Project = styled.article`
 const ProjectDescription = styled.div`
    position: relative;
    z-index: -10;
-   top: -170px;
+   top: -279px;
    display: flex;
    flex-direction: column;
    transition: all .4s ease-in-out;   
 
    ${Project}:hover & {
-      top: 0px
+      top: -5px
    }
    
    @media (min-width: 768px) {
@@ -61,7 +61,7 @@ export default function ProjectCard ({
             <Image 
                src={image}
                alt="screenshot of the project Vtex" 
-               className="w-[600px] h-52 rounded-lg transition-all duration-500 ease-in-out md:w-4/5 md:h-auto relative left-32 hover:-left-8"
+               className="w-[700px] h-64 object-cover object-left rounded-lg transition-all duration-500 ease-in-out hover:object-bottom left-0 -top-2  md:w-4/5 md:h-auto relative hover:-left-8"
             />
 
          <ProjectDescription className="space-y-4">
