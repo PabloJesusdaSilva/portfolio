@@ -10,7 +10,7 @@ export default function ProjectsPage () {
             Projetos
          </h1>
 
-         <section className="w-8/12 mt-20 space-y-20 text-zinc-300">
+         <section className="w-8/12 mt-20 space-y-28 text-zinc-300">
             <ProjectCard 
                image={VtexImage}
                title="Vtex"
