@@ -22,7 +22,9 @@ export default function RootLayout({
     <html lang="en" className='bg-zinc-900'>
       <body className={inter.className}>
         <Header />
-          {children}
+          <main className='flex justify-center'>
+            {children}
+          </main>
         <Footer />
       </body>
     </html>
