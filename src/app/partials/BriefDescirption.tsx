@@ -2,9 +2,9 @@ import { ChevronRightIcon } from 'lucide-react';
 
 export default function BriefDescription () {
    return (
-      <main className="flex ml-64 mb-20 w-full h-full text-zinc-300 flex-1 md:mb-56">
-         <div className="mt-40 -ml-60 md:mt-60 md:ml-32">
-            <h1 className="text-4xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-tr from-violet-600 to-orange-400 hover:bg-gradient-to-tl md:text-8xl">
+      <main className="flex ml-64 mb-36 w-full h-full text-zinc-300 flex-1 md:mb-56">
+         <div className="mt-40 -ml-52 md:mt-60 md:ml-32">
+            <h1 className="text-5xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-tr from-violet-600 to-orange-400 hover:bg-gradient-to-tl md:text-8xl">
                Pablo Silva
             </h1>
 
