@@ -1,6 +1,6 @@
 export default function Footer () {
    return (
-      <footer className="mt-10 p-4 backdrop-blur-lg w-full flex justify-center">
+      <footer className="mt-8 p-4 backdrop-blur-lg w-full flex justify-center">
          <nav>
             <ul className="flex space-x-16 text-zinc-400 font-medium tracking-widest">
                <li>

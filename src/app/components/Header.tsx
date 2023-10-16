@@ -1,11 +1,11 @@
+'use client'
+
 import { Command } from 'lucide-react';
 import Link from 'next/link';
 
-import AboutMePage from "@/app/about/page";
-
 export default function Header () {
    return (
-      <header className="flex justify-between w-full py-5 px-8 text-zinc-400 backdrop-blur-lg">
+      <header className="fixed flex justify-between w-full py-5 px-8 text-zinc-200 backdrop-blur-3xl">
          <div className='font-bold text-2xl transition-all duration-300 hover:text-zinc-300'>P</div>
 
          <nav className='hidden md:block'>
@@ -24,7 +24,8 @@ export default function Header () {
          </nav>
 
          <div>
-            <Command className='transition-all duration-500 hover:rotate-180'/>
+            <Command className='transition-all duration-500 hover:rotate-180'
+            />
          </div>
       </header>
    )
