@@ -61,7 +61,7 @@ export default function ProjectCard ({
             <Image 
                src={image}
                alt="screenshot of the project Vtex" 
-               className="w-[700px] h-64 object-cover object-left rounded-lg transition-all duration-500 ease-in-out hover:object-bottom left-0 -top-2  md:w-4/5 md:h-auto relative hover:-left-8"
+               className="w-[720px] h-64 object-cover object-left rounded-lg transition-all duration-500 ease-in-out hover:object-bottom left-0 -top-2  md:w-4/5 md:h-auto relative hover:-left-8"
             />
 
          <ProjectDescription className="space-y-4">
