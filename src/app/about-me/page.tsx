@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import AboutImage from "@/app/assets/eu.jpg"
 
-export default function AboutMePage () {
+const AboutMePage = () => {
    return (
       <main className="flex flex-col items-center w-full h-auto mt-32 text-zinc-400">
          <div className="w-5/6 md:w-3/6 pb-2 mb-3">
@@ -76,3 +76,5 @@ export default function AboutMePage () {
       </main>
    )
 }
+
+export default AboutMePage
