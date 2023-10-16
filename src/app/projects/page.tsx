@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 import ProjectCard from "../components/ProjectCard"
 import VtexImage from "@/app/assets/vtex-page.png"
 import AnunxImage from '@/app/assets/anunx-page.png'
