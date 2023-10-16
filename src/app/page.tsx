@@ -1,4 +1,4 @@
-import BriefDescription from "./components/BriefDescirption"
+import BriefDescription from "./partials/BriefDescirption"
 
 export default function Home() {
   return (

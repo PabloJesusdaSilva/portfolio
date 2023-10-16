@@ -11,7 +11,7 @@ export default function () {
             </h2>
          </div>
 
-         <div className="flex-col items-center space-x-0 space-y-8 md:flex justify-center space-x-28 w-5/6">
+         <div className="flex flex-col items-center space-x-0 space-y-8 md:flex-row justify-center w-5/6 md:space-x-28 md:space-y-0">
             <Image src={AboutImage} alt="" width={200} height={200} className="w-80 h-96 rounded-xl shadow-lg object-cover"/>
 
             <p className="w-10/12 md:w-4/12 tracking-wider leading-10 text-xl text-zinc-300">
@@ -23,7 +23,7 @@ export default function () {
             </p>
          </div>
 
-         <div className="w-4/6 -ml-0 md:w-2/6 -ml-80 mb-28 space-y-11 tracking-wider">
+         <div className="w-4/6 -ml-0 md:w-2/6 md:-ml-80 mb-28 space-y-11 tracking-wider">
             <h3 className="-ml-3 mt-40 -mb-3 text-5xl font-semibold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
                Training
             </h3>
