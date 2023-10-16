@@ -1,22 +1,26 @@
-'use client'
+"use client"
 
-import { Command } from 'lucide-react';
-import Link from 'next/link';
+import { Command } from "lucide-react";
+import Link from "next/link";
 
 export default function Header () {
    return (
       <header className="fixed flex justify-between w-full py-5 px-8 text-zinc-200 backdrop-blur-3xl">
-         <div className='font-bold text-2xl transition-all duration-300 hover:text-zinc-300'>P</div>
+         <div className="font-bold text-2xl transition-all duration-300 hover:text-zinc-300">
+            <Link href="/">
+               P
+            </Link>
+         </div>
 
-         <nav className='hidden md:block'>
-            <ul className='flex space-x-6'>
+         <nav className="hidden md:block">
+            <ul className="flex space-x-6">
                <li>
-                  <Link href="/about"className='text-xl font-semibold transition-all duration-300 hover:text-zinc-300'>
+                  <Link href="/about-me"className="text-xl font-semibold transition-all duration-300 hover:text-zinc-300">
                      About
                   </Link> 
                </li>
                <li>
-                  <Link href="/projects" className='text-xl font-semibold transition-all duration-300 hover:text-zinc-300'>
+                  <Link href="/projects" className="text-xl font-semibold transition-all duration-300 hover:text-zinc-300">
                      Projects
                   </Link> 
                </li>
@@ -24,7 +28,7 @@ export default function Header () {
          </nav>
 
          <div>
-            <Command className='transition-all duration-500 hover:rotate-180'
+            <Command className="transition-all duration-500 hover:rotate-180"
             />
          </div>
       </header>
