@@ -1,12 +1,15 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import styled from "styled-components"
 
 interface ProjectProps {
    image: any
    title: string  
    description: string
+   codePath: string
+   deployPath: string
 }
 
 const Project = styled.article`
@@ -25,34 +28,63 @@ const Project = styled.article`
 const ProjectDescription = styled.div`
    position: relative;
    z-index: -10;
-   left: -200px;
+   top: -170px;
    display: flex;
    flex-direction: column;
    transition: all .4s ease-in-out;   
-   
+
    ${Project}:hover & {
-      left: 20px
+      top: 0px
    }
+   
+   @media (min-width: 768px) {
+      top: 0;
+      left: -200px;
+
+      ${Project}:hover & {
+         z-index: 10;
+         left: 85px;
+      }
+   }
+   
 `
 
-
-export default function ProjectCard ({ image, title, description }: ProjectProps) {
+export default function ProjectCard ({ 
+   image, 
+   title, 
+   description,
+   codePath,
+   deployPath 
+}: ProjectProps) {
    return (
       <Project className="space-x-0 space-y-6 md:space-x-14">
             <Image 
                src={image}
                alt="screenshot of the project Vtex" 
-               className="w-12/12 rounded-lg transition-all duration-500 ease-in-out md:relative left-56 w-3/5 hover:left-0"
+               className="w-[600px] h-52 rounded-lg transition-all duration-500 ease-in-out md:w-4/5 md:h-auto relative left-32 hover:-left-8"
             />
 
-         <ProjectDescription className="space-y-3">
+         <ProjectDescription className="space-y-4">
             <h4 className="text-3xl md:text-4xl font-semibold tracking-wider text-transparent bg-clip-text bg-gradient-to-tr from-violet-500 to-orange-300">
                {title}
             </h4>
 
-            <p className="md:text-lg tracking-wide leading-8 font-medium w-10/12 group-hover:text-zinc-800">
+            <p className="w-12/12 md:pb-5 text-lg tracking-wide leading-8 font-medium w-[240px]">
                {description}
             </p>
+
+            <div className="space-x-8">
+               <button className="bg-gradient-to-tr from-violet-500 to-orange-300 py-2 px-5 rounded-md font-semibold text-lg uppercase">
+                  <Link href={codePath}>
+                     Code
+                  </Link>
+               </button>
+               <button className="bg-gradient-to-tr from-violet-500 to-orange-300 py-2 px-5 rounded-md font-semibold text-lg uppercase">
+                  <Link href={deployPath}>
+                     Deploy
+                  </Link>
+               </button>
+            </div>
          </ProjectDescription>
       </Project>
    )
