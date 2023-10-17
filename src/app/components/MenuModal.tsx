@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 import {
    HomeIcon,
    UserCircleIcon,
@@ -14,21 +16,30 @@ const ModalMenu = () => {
             <ul className="space-y-8 font-semibold text-lg">
                <li className="flex space-x-4">
                   <HomeIcon/>
-                  <span className="text-lg text-zinc-300">
+                  <Link 
+                     href="/"
+                     className="text-lg text-zinc-300"
+                  >
                      Home
-                  </span>
+                  </Link>
                </li>
                <li className="flex space-x-4">
                   <UserCircleIcon/>
-                  <span className="text-lg text-zinc-300">
+                  <Link 
+                     href="/about-me"
+                     className="text-lg text-zinc-300"
+                  >
                      About Me
-                  </span>
+                  </Link>
                </li>
                <li className="flex space-x-4">
                   <BracesIcon/>
-                  <span className="text-lg text-zinc-300">
+                  <Link 
+                     href="/projects"
+                     className="text-lg text-zinc-300"
+                  >
                      Projects
-                  </span>
+                  </Link>
                </li>
             </ul>
          </nav>
