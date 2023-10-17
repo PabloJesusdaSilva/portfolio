@@ -7,7 +7,7 @@ import Link from "next/link";
 import ModalMenu from "../components/MenuModal";
 
 export default function Header () {
-   const [openMenuModal, setOpenMenuModal] = useState(true)
+   const [openMenuModal, setOpenMenuModal] = useState(false)
 
    const handleOpenMenuModal = () => {
       setOpenMenuModal(!openMenuModal)
