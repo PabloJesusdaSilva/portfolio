@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import styled from "styled-components"
+import { styled, keyframes } from "styled-components"
 
 interface ProjectProps {
    image: any
@@ -25,6 +25,50 @@ const Project = styled.article`
    }
 `
 
+const descriptionProjectAnimationDesktop = keyframes`
+   0% {
+      z-index: -10;
+      top: 0;
+      left: -330px;
+      opacity: 0;
+   }
+   
+   50% {
+      z-index: -10;
+      left: 50px;
+      opacity: 0.2;
+   }
+   
+   100% {
+      top: 0;
+      z-index: 10;
+      left: 85px;
+      opacity: 1;
+   }   
+`
+
+const descriptionProjectAnimationMobile = keyframes`
+   0% {
+      z-index: -10;
+      top: -279px;
+      left: 0;
+      opacity: 0;
+   }
+   
+   50% {
+      z-index: -10;
+      left: 0;
+      opacity: 0.2;
+   }
+   
+   100% {
+      z-index: 10;
+      top: -5px;
+      left: 0;
+      opacity: 1;
+   }   
+`
+
 const ProjectDescription = styled.div`
    position: relative;
    z-index: -10;
@@ -34,19 +78,18 @@ const ProjectDescription = styled.div`
    transition: all .4s ease-in-out;   
 
    ${Project}:hover & {
-      top: -5px
+      animation: ${descriptionProjectAnimationMobile} .3s ease-in-out forwards;
    }
    
    @media (min-width: 768px) {
       top: 0;
-      left: -200px;
+      left: -330px;
+      opacity: 0;
 
       ${Project}:hover & {
-         z-index: 10;
-         left: 85px;
+         animation: ${descriptionProjectAnimationDesktop} .3s ease-in-out forwards;
       }
-   }
-   
+   }  
 `
 
 export default function ProjectCard ({ 
@@ -61,7 +104,7 @@ export default function ProjectCard ({
             <Image 
                src={image}
                alt="screenshot of the project Vtex" 
-               className="w-[750px] h-64 object-cover object-left rounded-lg transition-all duration-500 ease-in-out hover:object-bottom left-0 -top-2  md:w-4/5 md:h-auto relative hover:-left-8"
+               className="w-[750px] h-64 object-cover object-left rounded-lg transition-all duration-500 ease-in-out left-0 hover:object-bottom md:w-4/5 md:left-32 md:h-auto relative md:hover:-left-8"
             />
 
          <ProjectDescription className="space-y-4">

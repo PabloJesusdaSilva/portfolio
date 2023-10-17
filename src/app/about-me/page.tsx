@@ -11,15 +11,11 @@ const AboutMePage = () => {
             </h2>
          </div>
 
-         <div className="flex flex-col items-center space-x-0 space-y-8 md:flex-row justify-center w-5/6 md:space-x-28 md:space-y-0">
+         <div className="flex flex-col items-center space-x-0 space-y-8 md:items-start md:flex-row justify-center w-5/6 md:space-x-24 md:space-y-0">
             <Image src={AboutImage} alt="imagem de perfil" width={200} height={200} className="w-80 h-96 rounded-xl shadow-lg object-cover"/>
 
             <p className="w-10/12 md:w-4/12 tracking-wider leading-10 text-xl text-zinc-300">
-            Olá! Meu nome é Pablo, eu tenho 19 anos. Sou um desenvolvedor Front End e usando tecnologias em alta como NextJs, ReactJs, Node, Tailwind entre muitas outras.
-
-            Sempre fui uma pessoa curiosa e criativa, e sempre gostei de aprender coisas novas. Quando era criança, eu adorava desmontar aparelhos eletrônicos para ver como funcionavam. Depois, comecei a aprender a programar, e foi aí que descobri minha paixão pela tecnologia.
-
-            Hoje, eu estudo análise e desenvolvimento de sistemas na UAM - Universidade Anhembi Morumbi. Estou sempre procurando novas maneiras de usar a tecnologia para criar coisas incríveis. Além disso, sou músico e toco violoncelo.
+            Olá! Meu nome é Pablo, eu tenho 19 anos. Sou um desenvolvedor Front End e usando tecnologias em alta como NextJs, ReactJs, Node, Tailwind entre muitas outras. Sempre fui uma pessoa curiosa e criativa, e sempre gostei de aprender coisas novas. Quando era criança, eu adorava desmontar aparelhos eletrônicos para ver como funcionavam. Depois, comecei a aprender a programar, e foi aí que descobri minha paixão pela tecnologia. Hoje, eu estudo análise e desenvolvimento de sistemas na UAM - Universidade Anhembi Morumbi. Estou sempre procurando novas maneiras de usar a tecnologia para criar coisas incríveis. Além disso, sou músico e toco violoncelo.
             </p>
          </div>
 
