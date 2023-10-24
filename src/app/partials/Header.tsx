@@ -11,6 +11,8 @@ export default function Header () {
 
    const handleOpenMenuModal = () => {
       setOpenMenuModal(!openMenuModal)
+
+      return
    }
 
    return (

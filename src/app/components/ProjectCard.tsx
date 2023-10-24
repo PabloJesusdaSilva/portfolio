@@ -1,134 +1,135 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { styled, keyframes } from "styled-components"
+import Image from 'next/image';
+import styled from 'styled-components';
 
-interface ProjectProps {
-   image: any
-   title: string  
-   description: string
-   codePath: string
-   deployPath: string
-}
+import Memoji from '@/app/assets/memoji.jpeg';
 
-const Project = styled.article`
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   transition: all .4s ease-in-out;
+const ProjectContainer = styled.div`
+   width: 35%;
+   height: auto;
+   border-radius: 12px;
 
-   @media (min-width: 768px) {
-      justify-content: center;
-      flex-direction: row;
+   @media (max-width: 600px) {
+      width: 86%;
    }
 `
 
-const descriptionProjectAnimationDesktop = keyframes`
-   0% {
-      z-index: -10;
-      top: 0;
-      left: -330px;
-      opacity: 0;
-   }
-   
-   50% {
-      z-index: -10;
-      left: 50px;
-      opacity: 0.2;
-   }
-   
-   100% {
-      top: 0;
-      z-index: 10;
-      left: 85px;
-      opacity: 1;
-   }   
-`
-
-const descriptionProjectAnimationMobile = keyframes`
-   0% {
-      z-index: -10;
-      top: -279px;
-      left: 0;
-      opacity: 0;
-   }
-   
-   50% {
-      z-index: -10;
-      left: 0;
-      opacity: 0.2;
-   }
-   
-   100% {
-      z-index: 10;
-      top: -5px;
-      left: 0;
-      opacity: 1;
-   }   
+const ProjectImage = styled.div`
+   width: 100%;
 `
 
 const ProjectDescription = styled.div`
    position: relative;
+   top: -90px;
    z-index: -10;
-   top: -279px;
    display: flex;
-   flex-direction: column;
-   transition: all .4s ease-in-out;   
-
-   ${Project}:hover & {
-      animation: ${descriptionProjectAnimationMobile} .3s ease-in-out forwards;
-   }
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 90px;
+   padding: 10px 14px;
+   font-weight: 700;
+   border-radius: 0 0 20px 20px;
+   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+   transition: all .4s ease-in-out;
+   background-color: #27272a;
    
-   @media (min-width: 768px) {
-      top: 0;
-      left: -330px;
-      opacity: 0;
+   ${ProjectContainer}:hover & {
+      position: relative;
+      z-index: 10;
+      top: -4px;
+   }
 
-      ${Project}:hover & {
-         animation: ${descriptionProjectAnimationDesktop} .3s ease-in-out forwards;
-      }
-   }  
+   @media (max-width: 600px) {
+      height: 70px;
+   }
 `
 
-export default function ProjectCard ({ 
-   image, 
-   title, 
-   description,
-   codePath,
-   deployPath 
-}: ProjectProps) {
+const ProjectTitle = styled.h2`
+   position: relative;
+   bottom: -6px;
+   font-size: 22px;
+   letter-spacing: 2px;
+   color: #d4d4d8;
+
+   @media (max-width: 600px) {
+      font-size: 18px;
+   }
+`
+
+const PathButtons = styled.div`
+   display: flex;
+   position: relative;
+   bottom: -6px;
+   cursor: pointer;
+   color: #FFF;
+`
+
+const PathCodeButton = styled.button`
+   position: relative;
+   z-index: 20;
+   padding: 8px 22px;
+   font-size: 18px;
+   letter-spacing: 3px;
+   border-radius: 40px;
+   background: linear-gradient(to right top, rgb(139, 92, 246), rgb(253, 186, 116));
+   
+   @media (max-width: 600px) {
+      font-size: 16px;
+      padding: 6px 10px;
+   }
+`
+
+const PathDeployButton = styled.button`
+   margin-left: 15px;
+   padding: 8px 22px;
+   font-size: 18px;
+   letter-spacing: 3px;
+   border-radius: 40px;
+   background: linear-gradient(to right top, rgb(139, 92, 246), rgb(253, 186, 116));
+
+   @media (max-width: 600px) {
+      font-size: 16px;
+      margin-left: 10px;
+      padding: 6px 10px;
+   }
+`
+
+interface ProjectInformation {
+   title: string;
+   deployPath: string;
+   repositoriePath: string;
+}
+
+export default function ProjectCard ({
+   title,
+   deployPath,
+   repositoriePath
+}: ProjectInformation ) {
    return (
-      <Project className="space-x-0 space-y-6 md:space-x-14">
-            <Image 
-               src={image}
-               alt="screenshot of the project Vtex" 
-               className="w-[750px] h-64 object-cover object-left rounded-lg transition-all duration-500 ease-in-out left-0 hover:object-bottom md:w-4/5 md:left-32 md:h-auto relative md:hover:-left-8"
+      <ProjectContainer>
+         <ProjectImage>
+            <Image
+               className='rounded-xl'
+               src={Memoji}
+               alt='Image of the project Memoji'
             />
+         </ProjectImage>
 
-         <ProjectDescription className="space-y-4">
-            <h4 className="text-3xl md:text-4xl font-semibold tracking-wider text-transparent bg-clip-text bg-gradient-to-tr from-violet-500 to-orange-300">
+          <ProjectDescription>
+            <ProjectTitle>
                {title}
-            </h4>
-
-            <p className="w-12/12 md:pb-5 text-lg tracking-wide leading-8 font-medium w-[240px]">
-               {description}
-            </p>
-
-            <div className="space-x-8">
-               <button className="bg-gradient-to-tr from-violet-500 to-orange-300 py-2 px-5 rounded-md font-semibold text-lg uppercase">
-                  <Link href={codePath}>
-                     Code
-                  </Link>
-               </button>
-               <button className="bg-gradient-to-tr from-violet-500 to-orange-300 py-2 px-5 rounded-md font-semibold text-lg uppercase">
-                  <Link href={deployPath}>
-                     Deploy
-                  </Link>
-               </button>
-            </div>
-         </ProjectDescription>
-      </Project>
+            </ProjectTitle>
+            <PathButtons>
+               <PathCodeButton>
+                  Code
+               </PathCodeButton>
+               <PathDeployButton>
+                  Deploy
+               </PathDeployButton>
+            </PathButtons>
+          </ProjectDescription>
+      </ProjectContainer>
    )
 }
