@@ -8,7 +8,7 @@ import {
 
 const ModalMenu = () => {
    return (
-      <div className="w-72 h-60 backdrop-blur-xl rounded-xl bg-black/95 ">
+      <div className="w-96 h-60 backdrop-blur-xl rounded-xl bg-black/95 ">
          <nav className="flex flex-col items-start p-5 pl-8">
             <span className="font-medium text-xs uppercase mb-7">
                Ir para
