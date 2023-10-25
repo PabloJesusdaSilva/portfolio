@@ -9,4 +9,4 @@ This project, it contain informations about me, my education and projects.
 * [TailwindCSS](https://tailwindcss.com/) - Tailwind CSS 
 
 ---
-⌨️ com ❤️ por [Pablo Silva](https://github.com/PabloJesusdaSilva) 😊
+⌨️ with ❤️ by [Pablo Silva](https://github.com/PabloJesusdaSilva) 😊
