@@ -7,7 +7,7 @@ import Link from "next/link";
 import ModalMenu from "../components/MenuModal";
 
 export default function Header () {
-   const [openMenuModal, setOpenMenuModal] = useState(false)
+   const [openMenuModal, setOpenMenuModal] = useState(true)
 
    const handleOpenMenuModal = () => {
       setOpenMenuModal(!openMenuModal)
@@ -45,14 +45,14 @@ export default function Header () {
                </ul>
             </nav>
 
-            <div className="block p-2 cursor-pointer md:hidden">
+            <div className="relative z-50 block p-2 cursor-pointer lg:hidden">
                <Command 
                   className="transition-all duration-500 hover:rotate-180"
                   onClick={handleOpenMenuModal}
                   />
             </div>
 
-            <div className="absolute z-40 left-20 top-36">
+            <div className="absolute w-full left-0 top-0">
                {
                   openMenuModal 
                   ? <ModalMenu />

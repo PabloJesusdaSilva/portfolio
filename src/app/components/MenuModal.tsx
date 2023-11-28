@@ -1,49 +1,47 @@
-import Link from "next/link"
+
+import Link from 'next/link'
 
 import {
    HomeIcon,
    UserCircleIcon,
    BracesIcon
-} from "lucide-react"
+} from 'lucide-react'
 
 const ModalMenu = () => {
    return (
-      <div className="w-96 h-60 backdrop-blur-xl rounded-xl bg-black/95 ">
-         <nav className="flex flex-col items-start p-5 pl-8">
-            <span className="font-medium text-xs uppercase mb-7">
+      <article className='w-full h-full absolute'>
+         <nav className='w-full h-fit pt-6 pb-12 px-8 bg-zinc-950/95'>
+            <h4 className='mb-10 pb-4 border-b-2 border-zinc-800'>
                Ir para
-            </span>
-            <ul className="space-y-8 font-semibold text-lg">
-               <li className="flex space-x-4">
-                  <HomeIcon/>
-                  <Link 
-                     href="/"
-                     className="text-lg text-zinc-300"
-                  >
+            </h4>
+            <ul className='space-y-12 tracking-widest font-semibold text-xl'>
+               <li className='flex'>
+                  <HomeIcon />
+                  <span className='pl-4'>
                      Home
-                  </Link>
+                  </span>
                </li>
-               <li className="flex space-x-4">
-                  <UserCircleIcon/>
-                  <Link 
-                     href="/about-me"
-                     className="text-lg text-zinc-300"
-                  >
-                     About Me
-                  </Link>
+               <li className='flex'>
+                  <HomeIcon />
+                  <span className='pl-4'>
+                     About me
+                  </span>
                </li>
-               <li className="flex space-x-4">
-                  <BracesIcon/>
-                  <Link 
-                     href="/projects"
-                     className="text-lg text-zinc-300"
-                  >
-                     Projects
-                  </Link>
+               <li className='flex'>
+                  <HomeIcon />
+                  <span className='pl-4'>
+                     Contact
+                  </span>
+               </li>
+               <li className='flex'>
+                  <HomeIcon />
+                  <span className='pl-4'>
+                     Project
+                  </span>
                </li>
             </ul>
          </nav>
-      </div>
+      </article>
    )
 }
 
