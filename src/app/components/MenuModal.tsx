@@ -10,34 +10,43 @@ import {
 const ModalMenu = () => {
    return (
       <article className='w-full h-full absolute'>
-         <nav className='w-full h-fit pt-6 pb-12 px-8 bg-zinc-950/95'>
+         <nav className='w-full h-fit pt-6 pb-16 px-10 bg-zinc-950/95'>
             <h4 className='mb-10 pb-4 border-b-2 border-zinc-800'>
                Ir para
             </h4>
             <ul className='space-y-12 tracking-widest font-semibold text-xl'>
-               <li className='flex'>
-                  <HomeIcon />
-                  <span className='pl-4'>
-                     Home
-                  </span>
+               <li>
+                  <Link
+                     href='/'
+                     className='flex'
+                  >
+                     <HomeIcon />
+                     <span className='pl-4'>
+                        Home
+                     </span>
+                  </Link>
                </li>
-               <li className='flex'>
-                  <HomeIcon />
-                  <span className='pl-4'>
-                     About me
-                  </span>
+               <li>
+                  <Link
+                     href='/about-me'
+                     className='flex'
+                  >
+                     <UserCircleIcon />
+                     <span className='pl-4'>
+                        Sobre mim
+                     </span>
+                  </Link>
                </li>
-               <li className='flex'>
-                  <HomeIcon />
-                  <span className='pl-4'>
-                     Contact
-                  </span>
-               </li>
-               <li className='flex'>
-                  <HomeIcon />
-                  <span className='pl-4'>
-                     Project
-                  </span>
+               <li>
+                  <Link
+                     href='/projects'
+                     className='flex'
+                  >
+                     <BracesIcon />
+                     <span className='pl-4'>
+                        Projetos
+                     </span>
+                  </Link>
                </li>
             </ul>
          </nav>
