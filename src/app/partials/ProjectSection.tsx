@@ -19,7 +19,7 @@ const data = [
    },
    {
       image: MemojiImage,
-      title: 'Memoji',
+      title: 'Config',
       repositoriePath: 'https://github.com/PabloJesusdaSilva/memoji',
       deployPath: 'https://codemoji-red.vercel.app/'
    },
@@ -38,6 +38,7 @@ const ProjectSection = () => {
             {
                data.map(card => (
                   <ProjectCard 
+                     key={card.title}
                      image={card.image}
                      title={card.title}
                      repositoriePath={card.repositoriePath}
