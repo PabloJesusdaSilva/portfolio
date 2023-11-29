@@ -1,13 +1,13 @@
-import ProjectCard from "../components/ProjectCard"
+import ProjectCard from '../components/ProjectCard'
 
-import VtexImage from "@/app/assets/vtex-page.png"
+import VtexImage from '@/app/assets/vtex-page.png'
 import AnunxImage from '@/app/assets/anunx-page.png'
 import MemojiImage from '@/app/assets/memoji.jpeg'
 
 const ProjectSection = () => {
    return(
-      <section className="mt-16 ml-4 md:ml-48">
-         <div className="flex flex-col space-y-10">
+      <section className='mt-16 ml-4'>
+         <div className='flex flex-col items-center space-y-32'>
             <ProjectCard 
                image={MemojiImage}
                title='Memoji'
