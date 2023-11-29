@@ -17,7 +17,7 @@ export default function ProjectCard ({
    deployPath
 }: ProjectInformation ) {
    return (
-      <div className='group w-3/4'>
+      <div className='group w-full pr-3 lg:w-3/4'>
          <Image
             alt=''
             src={image} 

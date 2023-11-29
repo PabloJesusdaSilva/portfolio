@@ -34,7 +34,7 @@ const data = [
 const ProjectSection = () => {
    return(
       <section className='mt-16 ml-4'>
-         <div className='flex flex-col items-center space-y-32'>
+         <div className='flex flex-col items-center space-y-28'>
             {
                data.map(card => (
                   <ProjectCard 
