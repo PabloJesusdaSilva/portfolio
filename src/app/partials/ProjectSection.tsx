@@ -28,7 +28,7 @@ const data = [
       title: 'Anunx',
       repositoriePath: 'https://github.com/PabloJesusdaSilva/Anunx',
       deployPath: 'https://codemoji-red.vercel.app/'
-   },
+   }
 ]
 
 const ProjectSection = () => {
