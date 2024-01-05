@@ -3,8 +3,16 @@ import ProjectCard from '../components/ProjectCard'
 import VtexImage from '@/app/assets/vtex-page.png'
 import AnunxImage from '@/app/assets/anunx-page.png'
 import MemojiImage from '@/app/assets/memoji.jpeg'
+import React from 'react'
 
-const data = [
+interface ICard {
+   image: any;
+   title: string;
+   repositoriePath: string;
+   deployPath: string;
+}
+
+const data: ICard[] = [
    {
       image: MemojiImage,
       title: 'Memoji',
