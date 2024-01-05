@@ -90,11 +90,24 @@ const AboutMePage = () => {
                    - EAD
                </h5>
                <span>
-                  02 - 2023 / 07 - 2025
+                  08 - 2023 / 02 - 2024
                </span>
             </article>
-
             
+            <article className='space-y-2'>
+               <h4 className='text-xl text-zinc-200 font-medium'>
+                  Web Moderno
+               </h4>
+               <h5 className='text-lg pb-3 text-zinc-400 font-medium'>
+                  <span className='text-zinc-300 mr-1'>
+                     Cod3r
+                  </span>
+                   - EAD
+               </h5>
+               <span>
+                  12 - 2022 / 2 - 2024
+               </span>
+            </article>
          </div>
 
          <div className='w-5/6 ml-12 lg:ml-28'>
@@ -103,7 +116,7 @@ const AboutMePage = () => {
             </h3>
 
             <article className='flex flex-wrap w-full'>
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo Javascript'
                      src={javascriptIcon}
@@ -112,7 +125,7 @@ const AboutMePage = () => {
                   />
                </div>
 
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo Typescript'
                      src={typescriptIcon}
@@ -121,7 +134,7 @@ const AboutMePage = () => {
                   />
                </div>
 
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo ReactJs'
                      src={reactjsIcon}
@@ -130,7 +143,7 @@ const AboutMePage = () => {
                   />
                </div>
 
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo NextJs'
                      src={nextjsIcon}
@@ -139,7 +152,7 @@ const AboutMePage = () => {
                   />
                </div>
 
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo NodeJs'
                      src={nodejsIcon}
@@ -148,7 +161,7 @@ const AboutMePage = () => {
                   />
                </div>
 
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo MySQL'
                      src={mysqlIcon}
@@ -157,7 +170,7 @@ const AboutMePage = () => {
                   />
                </div>
 
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo SASS'
                      src={sassIcon}
@@ -166,7 +179,7 @@ const AboutMePage = () => {
                   />
                </div>
 
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo Styled Components'
                      src={styledComponentsIcon}
@@ -175,7 +188,7 @@ const AboutMePage = () => {
                   />
                </div>
 
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo TailwindCSS'
                      src={tailwindCSSIcon}
@@ -184,7 +197,7 @@ const AboutMePage = () => {
                   />
                </div>
                
-               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105 shadow-md hover:shadow-purple-950 hover:bg-purple-700'>
+               <div className='w-36 h-36 m-5 rounded-xl p-8 transition-all duration-300 bg-zinc-700/75 hover:scale-105'>
                   <Image
                      alt='Logo GIT'
                      src={gitIcon}

@@ -13,7 +13,7 @@ export default function BriefDescription () {
 
             <div className='mt-4 tracking-widest space-y-1'>
                <h3 className='text-zinc-300 text-xl font-bold'>Front End Developer</h3>
-               <p className='w-80 text-zinc-500 text-lg font-semibold'>Typescript | React.js | SASS | Node.js | SQL</p>
+               <p className='w-80 text-zinc-500 text-lg font-semibold md:w-96'>Typescript | React.js | SASS | Node.js | MySQL | Postgres | MongoDB</p>
             </div>
 
             <button className='flex h-6 items-center mt-20 -ml-2 px-3 py-5 rounded-xl font-medium text-lg tracking-wider transition-all duration-300 hover:bg-zinc-800'>
