@@ -12,54 +12,18 @@ export default function Header () {
    const handleOpenMenuModal = () => {
       setOpenMenuModal(!openMenuModal)
 
-      return
+      return;
    }
 
    return (
-      <>
-         <header className='fixed z-20 flex justify-between w-full py-4 px-8 text-zinc-200 backdrop-blur-xl'>
-            <div className='p-2 font-bold text-2xl transition-all duration-300 cursor-pointer hover:text-zinc-300'>
-               <Link href='/'>
-                  P
-               </Link>
-            </div>
-
-            <nav className='hidden md:block'>
-               <ul className='flex space-x-6'>
-                  <li className='p-2 cursor-pointer'>
-                     <Link 
-                        href='/about-me'
-                        className='text-xl font-semibold transition-all duration-300 hover:text-zinc-300'
-                     >
-                        About
-                     </Link> 
-                  </li>
-                  <li className='p-2 cursor-pointer'>
-                     <Link 
-                        href='/projects' 
-                        className='text-xl font-semibold transition-all duration-300 hover:text-zinc-300'
-                     >
-                        Projects
-                     </Link> 
-                  </li>
-               </ul>
-            </nav>
-
-            <div className='relative z-50 block p-2 cursor-pointer lg:hidden'>
-               <Command 
-                  className='transition-all duration-500 hover:rotate-180'
-                  onClick={handleOpenMenuModal}
-                  />
-            </div>
-
-            <div className='absolute w-full left-0 top-0'>
-               {
-                  openMenuModal 
-                  ? <ModalMenu />
-                  : ''
-               }
-            </div>
-         </header>
-      </>
+      <header className='absolute flex justify-center items-center w-full h-10'>
+         <nav>
+            <ul className='flex space-x-5 text-zinc-500 tracking-wide text-base font-medium'>
+               <li>
+                  <span>Menu</span>
+               </li>
+            </ul>
+         </nav>
+      </header>
    )
 }
