@@ -1,9 +1,9 @@
-import BriefDescription from "./components/BriefDescirption"
+import InitialPresentacion from "./components/InitialPresentation";
 
 export default function Home() {
   return (
-    <>
-      <BriefDescription />
-    </>
+    <main className="flex w-full">
+      <InitialPresentacion />
+    </main>
   )
 }

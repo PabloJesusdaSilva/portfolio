@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
+import { Providers } from '@/app/providers'; 
+
 import Header from '@/app/partials/Header';
 import Footer from '@/app/partials/Foooter';
 
@@ -23,7 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
           <main className='flex justify-center'>
-            {children}
+              {children}
           </main>
         <Footer />
       </body>
