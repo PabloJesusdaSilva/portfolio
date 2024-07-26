@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/context/MenuModal.js", "src/app/context/MenuModal.tss"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/context/MenuModaltsx", "src/app/context/MenuModal.tss"],
   "exclude": ["node_modules"]
 }

@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import { Providers } from '@/app/providers'; 
-
 import Header from '@/app/partials/Header';
 import Footer from '@/app/partials/Foooter';
 
 import './globals.css';
+import { NavProvider } from './context/MenuModal';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,14 +20,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+        <NavProvider>
     <html lang="en" className='bg-zinc-900'>
-      <body className={inter.className}>
-        <Header />
-          <main className=''>
+        <body className={inter.className}>
+          <Header />
+            <main>
               {children}
-          </main>
-        <Footer />
-      </body>
-    </html>
+            </main>
+          <Footer />
+        </body>
+      </html>
+    </NavProvider>
   )
 }
