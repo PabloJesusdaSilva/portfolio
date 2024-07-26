@@ -1,28 +1,12 @@
 'use client'
 
-import { useState } from 'react';
-import { Command } from 'lucide-react';
-import Link from 'next/link';
-
-import ModalMenu from '../components/MenuModal';
+import ToggleMenu from '../components/toogleMenu';
 
 export default function Header () {
-   const [openMenuModal, setOpenMenuModal] = useState(false)
-
-   const handleOpenMenuModal = () => {
-      setOpenMenuModal(!openMenuModal)
-
-      return;
-   }
-
    return (
-      <header className='absolute flex justify-center items-center w-full h-10'>
-         <nav>
-            <ul className='flex space-x-5 text-zinc-500 tracking-wide text-base font-medium'>
-               <li>
-                  <span>Menu</span>
-               </li>
-            </ul>
+      <header className='relative flex justify-center items-center w-full h-10 mb-28'>
+         <nav className='relative z-20'>
+            <ToggleMenu />
          </nav>
       </header>
    )
