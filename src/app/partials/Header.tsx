@@ -1,6 +1,6 @@
 'use client'
 
-import ToggleMenu from '../components/toogleMenu';
+import ToggleMenu from '../components/';
 
 export default function Header () {
    return (
