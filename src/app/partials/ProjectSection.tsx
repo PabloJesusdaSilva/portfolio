@@ -1,5 +1,3 @@
-import ProjectCard from '../components/ProjectCard'
-
 import VtexImage from '@/app/assets/vtex-page.png'
 import AnunxImage from '@/app/assets/anunx-page.png'
 import MemojiImage from '@/app/assets/memoji.jpeg'
@@ -41,22 +39,7 @@ const data: ICard[] = [
 
 const ProjectSection = () => {
    return(
-      <section className='mt-16 ml-4'>
-         <div className='flex flex-col items-center space-y-28'>
-            {
-               data.map(card => (
-                  <ProjectCard 
-                     key={card.title}
-                     image={card.image}
-                     title={card.title}
-                     repositoriePath={card.repositoriePath}
-                     deployPath={card.deployPath}
-                  />
-               ))
-            }
-            
-         </div>
-      </section>
+      <></>
    )
 }
 

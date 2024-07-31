@@ -2,9 +2,11 @@ import Image from 'next/image';
 
 import AboutImage from '@/app/assets/eu.jpg'
 
+const stacks: string[] = ["HTML5", "CSS3", "Javascript", "Typescript", "React.js", "Next.js", "Java", "Spring Boot", "PostgresSQL", "MySQL", "MongoDB"];
+
 const AboutMePage = () => {
    return (
-      <section className='w-full space-y-28'>
+      <section className='w-full space-y-28 mt-20'>
          <div className='flex justify-center'>
             <Image 
                alt='' 
@@ -75,40 +77,19 @@ const AboutMePage = () => {
                <h1 className='text-zinc-200 text-4xl font-bold tracking-wider'>
                   Stacks
                </h1>
-               <div className='flex flex-wrap text-zinc-400 text-lg tracking-wider space-x-4 space-y-5 mt-5'>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     HTML5
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     CSS3
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     Javascript
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     Typescript
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     React.js
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     Next.js
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     Java
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     SpringBoot
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     PostgresSQL
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     MySQL
-                  </span>
-                  <span className='bg-zinc-800 px-2 py-1 rounded-2xl shadow-xl'>
-                     MongoDB
-                  </span>
+               <div className='flex flex-wrap text-zinc-400 text-lg tracking-widest space-x-4 mt-5'>
+                  {
+                     stacks.map(item => {
+                        return (
+                           <span 
+                              key={item}
+                              className='transition-all duration-500 bg-zinc-800 text-zinc-400 px-2 py-1 rounded-2xl shadow-xl mb-4 hover:scale-105 hover:bg-purple-800 hover:text-zinc-200 font-medium'
+                           >
+                              {item}
+                           </span>
+                        )
+                     })
+                  }
                </div>
             </div>
          </div>
