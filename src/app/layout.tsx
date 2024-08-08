@@ -22,13 +22,13 @@ export default function RootLayout({
   return (
         <NavProvider>
     <html lang="en" className='bg-zinc-900'>
-        <body className={inter.className}>
-          <Header />
-            <main>
-              {children}
-            </main>
-          <Footer />
-        </body>
+          <body className={inter.className}>
+            <Header />
+                <main>
+                  {children}
+                </main>
+        <Footer />
+            </body>
       </html>
     </NavProvider>
   )

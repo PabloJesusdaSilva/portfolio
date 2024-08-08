@@ -1,8 +1,6 @@
-import { ChevronRightIcon } from 'lucide-react';
-
 export default function BriefDescription () {
    return (
-      <div className='flex flex-col w-full h-screen justify-center items-center'>
+      <div className=' flex justify-center items-center w-full h-[500px]'>
          <div>
             <h1 className='tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 text-6xl font-bold'>
                Pablo Jesus
@@ -12,10 +10,10 @@ export default function BriefDescription () {
                FullStack Developer
             </h2>
 
-          <p className='text-zinc-400 text-base'>
+            <p className='text-zinc-400 text-base'>
                Java | SpringBoot | PostgresSQL | Next.js | TailwindCSS
             </p>
-            </div>
+         </div>
       </div>
    )
 }

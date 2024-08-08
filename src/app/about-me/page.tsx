@@ -35,7 +35,7 @@ const AboutMePage = () => {
                   Formação
                </h1>
 
-               <div className='flex flex-col mt-5 text-zinc-400 tracking-wide'>
+               <div className='-ml-2 flex flex-col mt-5 p-2 text-zinc-400 tracking-wide transition-all duration-300 hover:bg-zinc-800 rounded-xl'>
                   <span className='text-xl'>Engenharia de Software - Bacharelado</span>
                   <span className='text-zinc-500'>Anhanguera Educacional - 08/2024 a 01/2028</span>
                </div>
@@ -48,21 +48,21 @@ const AboutMePage = () => {
                   Cursos e certificados
                </h1>
                <div className='flex flex-col mt-5 text-zinc-400 tracking-wide space-y-5'>
-                  <article className='flex flex-col'>
+                  <article className='-ml-2 p-2 transition-all duration-300 flex flex-col hover:bg-zinc-800 rounded-xl'>
                      <span className='text-xl'>MiniCurso Java</span>
                      <span className='text-zinc-500'>
                         Rocketseat - 07/2024 
                      </span>
                   </article>
 
-                  <article className='flex flex-col'>
+                  <article className='-ml-2 p-2 transition-all duration-300 flex flex-col hover:bg-zinc-800 rounded-xl'>
                      <span className='text-xl'>Javascript FullStack</span>
                      <span className='text-zinc-500'>
                         Hotmart - 09/2019 a 06/2020 
                      </span>
                   </article>
 
-                  <article className='flex flex-col'>
+                  <article className='-ml-2 p-2 transition-all duration-300 flex flex-col hover:bg-zinc-800 rounded-xl'>
                      <span className='text-xl'>Desenvolvimento Front End</span>
                      <span className='text-zinc-500'>
                         Senai - 02/2023 a 08/2023 
@@ -83,7 +83,7 @@ const AboutMePage = () => {
                         return (
                            <span 
                               key={item}
-                              className='transition-all duration-500 bg-zinc-800 text-zinc-400 px-2 py-1 rounded-2xl shadow-xl mb-4 hover:scale-105 hover:bg-purple-800 hover:text-zinc-200 font-medium'
+                              className='transition-all duration-500 bg-zinc-800 text-zinc-400 px-2 py-1 rounded-2xl shadow-lg shadow-stone-900 mb-4 hover:scale-105 hover:bg-zinc-700 hover:text-zinc-200 font-medium'
                            >
                               {item}
                            </span>
