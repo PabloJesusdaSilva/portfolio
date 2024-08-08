@@ -5,6 +5,7 @@ import {
  } from 'lucide-react';
 
 import { useNav } from '../context/MenuModal';
+import Link from 'next/link';
 
 const ToggleMenu: React.FC = () => {
    const { isOpen, toggleNav } = useNav();
@@ -20,15 +21,15 @@ const ToggleMenu: React.FC = () => {
                   <ul className='flex flex-col pl-8 justify-center mt-2 space-y-4 tracking-wider font-medium  min-w-full'>
                      <li className='flex w-max'>
                         <HomeIcon className='mr-2' />
-                        <span>
+                        <Link href="/">
                            Home
-                        </span>
+                        </Link>
                      </li>
                      <li className='flex w-max'>
                         <UserIcon className='mr-2' />
-                        <span>
+                        <Link href="/about-me">
                         About Me
-                        </span>
+                        </Link>
                      </li>
                   </ul>
                </div>
